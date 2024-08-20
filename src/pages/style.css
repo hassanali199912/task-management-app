@@ -1,0 +1,210 @@
+:root {
+
+    --white-color: #fff;
+    --white-color2: #b8bbc9;
+    --gray-color: #333333;
+    --gray-color2: #808080;
+
+    --black-color: #333233;
+    --dark-color: #19181a;
+    --light-dark: #212022;
+    --light-hover-dark: #2d2d37;
+
+    --green-color: #6fb069;
+    --orange-color: #db755d;
+}
+
+.main-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.registers-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+/*#region login Form*/
+
+.login-container .login-card {
+    background-color: var(--black-color);
+    padding: 2rem;
+    min-height: 300px;
+    max-width: 500px;
+    min-width: 400px;
+    border-radius: 10px;
+    color: var(--white-color);
+    gap: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container .login-card h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.login-container .login-card label {
+    color: var(--gray-color2);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.login-container .login-card input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.login-container .login-card input:focus {
+    outline: 2px solid var(--light-hover-dark);
+}
+
+.login-container .login-card input::placeholder {
+    color: var(--gray-color2);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+.login-container .login-card button {
+    margin: 1rem 0;
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-container .login-card button:hover {
+    background-color: var(--light-hover-dark);
+}
+
+/*#endregion login Form*/
+
+
+
+/*#region Register Section*/
+.register-content {
+    text-align: center;
+
+}
+
+.register-content h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.register-content h3 span {
+    color: var(--orange-color);
+}
+
+.register-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--gray-color2);
+}
+
+.register-content button {
+    margin: 1rem 0;
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.register-content button img {
+    width: 20px;
+    color: var(--white-color);
+}
+
+.register-content button:nth-child(1) {
+    background-color: #1a73e9;
+    color: var(--white-color);
+}
+
+.register-content button:nth-child(3) {
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.register-content .or {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--gray-color2);
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.register-content .or::before {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-color2);
+    transform: translatey(3px);
+}
+
+.register-content .or::after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-color2);
+    transform: translatey(3px);
+
+}
+
+
+
+/*#endregion Register Section*/
